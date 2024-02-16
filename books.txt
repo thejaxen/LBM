@@ -1,4 +1,4 @@
-Papazın Kızı,George Orwell,1988,224
-1984, George Orwell,1981,255
-Aspidistra, George Orwell,1969,300
-Limon Ağacı,Sandy Tolan,2000,662
+Kırlangıç Çığlığı,Ahmet Ümit,2000,202
+Hayvanlar Çiftliği,George Orwell,2001,206
+1984,George Orwell,2006,206
+Aspidistra,George Orwell,2004,308

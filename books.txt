@@ -2,3 +2,10 @@ Kırlangıç Çığlığı,Ahmet Ümit,2000,202
 Hayvanlar Çiftliği,George Orwell,2001,206
 1984,George Orwell,2006,206
 Aspidistra,George Orwell,2004,308
+Limon Ğacı,Sandy Tolan,2005,524
+Limon Ağacı,Sandy Tolan,2003,569
+Papazın Kızı,George Orwell,2007,532
+Savaş Sanatı,Tsun Zu,150,560
+MİT,Hakan Fidan,1985,49
+gg,gg,2000,87
+gg,gg,2000,87

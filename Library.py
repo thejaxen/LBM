@@ -35,12 +35,18 @@ class Library:
     def remove_books(self):
         
         kaldırılacak_kitap = input("Kaldırmak istediğiniz kitabın adını giriniz:")
+        
         try:
-            self.file = open("books.txt",r,encoding="utf-8")
+            self.file = open("books.txt", "r", encoding="utf-8")
+            
             lines = self.file.readlines()
+            
             lines = [line.strip() for line in lines]
+
             
             for i, line in enumerate(lines):
+                pass
+                
                 
         except Exception:
             print(f"Kitap kaldırılamadı.")
@@ -68,7 +74,6 @@ class Library:
             
 
 Library()
-Library().list_books()
-Library().add_books()
+Library().remove_books()
 
 

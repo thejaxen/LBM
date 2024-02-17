@@ -63,7 +63,7 @@ class Library:
 
                 kitap_bilgisi = f"{kitap_adı},{yazar},{yıl},{sayfa}"
                 
-                self.file.write(f"{kitap_bilgisi}")
+                self.file.write(f"\n{kitap_bilgisi}")
                 
                 print("Kitap eklendi.")
 

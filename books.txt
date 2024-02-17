@@ -7,5 +7,6 @@ Limon Ağacı,Sandy Tolan,2003,569
 Papazın Kızı,George Orwell,2007,532
 Savaş Sanatı,Tsun Zu,150,560
 MİT,Hakan Fidan,1985,49
-gg,gg,2000,87
-gg,gg,2000,87
+
+Emirkan Derköken,Mert Duyar,2000,24
+EMİRKAN DERKÖKEN,MERT DUYAR,2000,24

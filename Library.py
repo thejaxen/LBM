@@ -64,7 +64,7 @@ class Library:
                 kitap_bilgisi = f"{kitap_adı},{yazar},{yıl},{sayfa}"
                 
                 self.file.write(f"{kitap_bilgisi}")
-                self.file.write(f"\n")
+                
                 print("Kitap eklendi.")
 
             except ValueError as e:
@@ -74,6 +74,8 @@ class Library:
             
 
 Library()
+Library().list_books()
+Library().add_books()
 Library().remove_books()
 
 

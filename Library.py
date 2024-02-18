@@ -35,31 +35,25 @@ class Library:
 
         
     def remove_books(self):
-        
-        kaldırılacak_kitap = input("Kaldırmak istediğiniz kitabın adını giriniz:")
-        
-        try:
-       
-            self.file = open("books.txt","r", encoding="utf-8") 
-            
-            lines = self.file.readlines()
-            
-            lines = [line.strip() for line in lines]
 
-            filtered_lines = list(filter(lambda line: line.split(",")[0] != kaldırılacak_kitap, lines))
-            
-            print(f"{filtered_lines}")
-            
-            yeni_liste = filtered_lines.copy()
-            
+        kaldırılacak_kitap = input("Kaldırmak istediğiniz kitabın adını giriniz:")
+    
+        try:
+            with open("books.txt", "r", encoding="utf-8") as file:
+                lines = file.readlines()
+                lines = [line.strip() for line in lines]
+
+            filtered_lines = [line for line in lines if line.split(",")[0] != kaldırılacak_kitap]
+
             if len(filtered_lines) == len(lines):
                 print("Kaldırılacak kitap bulunamadı")
-            
-            self.file.write(f"{yeni_liste}")
-            self.file.close()
-            
-        except Exception:
-            print(f"Bir problem yaşandı.")
+            else:
+                with open("books.txt", "w", encoding="utf-8") as file:
+                    file.write('\n'.join(filtered_lines))
+                    print("Kitap başarıyla kaldırıldı.")
+                
+        except Exception as e:
+            print(f"Bir problem yaşandı: {e}")
             
         
             

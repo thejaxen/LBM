@@ -11,3 +11,4 @@ Emirkan Derköken,Mert Duyar,2000,24
 EMİRKAN DERKÖKEN,MERT DUYAR,2000,24
 gg,gg,20,20
 pp,pp,20,20
+

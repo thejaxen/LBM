@@ -31,27 +31,39 @@ class Library:
             print(f"Kitap sistemde bulunamadı.")
             
         self.file.close()
+
+
         
     def remove_books(self):
         
         kaldırılacak_kitap = input("Kaldırmak istediğiniz kitabın adını giriniz:")
         
         try:
-            self.file = open("books.txt", "r", encoding="utf-8")
+       
+            self.file = open("books.txt","r", encoding="utf-8") 
             
             lines = self.file.readlines()
             
             lines = [line.strip() for line in lines]
 
+            filtered_lines = list(filter(lambda line: line.split(",")[0] != kaldırılacak_kitap, lines))
             
-            for i, line in enumerate(lines):
-                pass
-                
-                
+            print(f"{filtered_lines}")
+            
+            yeni_liste = filtered_lines.copy()
+            
+            if len(filtered_lines) == len(lines):
+                print("Kaldırılacak kitap bulunamadı")
+            
+            self.file.write(f"{yeni_liste}")
+            self.file.close()
+            
         except Exception:
-            print(f"Kitap kaldırılamadı.")
+            print(f"Bir problem yaşandı.")
             
-    
+        
+            
+
     def add_books(self):
             
             try:
@@ -74,8 +86,7 @@ class Library:
             
 
 Library()
-Library().list_books()
-Library().add_books()
+
 Library().remove_books()
 
 

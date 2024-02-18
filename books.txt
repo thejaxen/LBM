@@ -3,5 +3,5 @@ Hayvanlar Çiftliği,George Orwell,2001,206
 1984,George Orwell,2006,206
 Aspidistra,George Orwell,2004,308
 Limon Ağacı,Sandy Tolan,2003,569
-Papazın Kızı,George Orwell,2007,532
 Savaş Sanatı,Tsun Zu,150,560
+Mert Duyar,Mert Duyar,2000,24
